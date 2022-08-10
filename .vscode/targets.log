@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 29 17:41:48 2022
+# Make data base, printed on Fri Aug  5 18:05:15 2022
 
 # Variables
 
@@ -47,7 +45,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:54452
+JOURNAL_STREAM = 8:52758
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -67,27 +65,33 @@ MAKELEVEL := 0
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-MANAGERPID = 10987
+MANAGERPID = 40070
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = uz_UZ.UTF-8
 # environment
 VSCODE_CWD = /home/devlop13
+# environment
+GOPROXY = https://proxy.golang.org,direct
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/devlop13/Downloads/google-cloud-sdk-378.0.0-linux-x86_64/google-cloud-sdk/bin:/home/devlop13/anaconda3/bin:/home/devlop13/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/devlop13/.dotnet/tools:/usr/local/go/bin:/home/devlop13/.dotnet/tools:/usr/local/go/bin
+PATH = /home/devlop13/Downloads/google-cloud-sdk-378.0.0-linux-x86_64/google-cloud-sdk/bin:/home/devlop13/anaconda3/bin:/home/devlop13/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/devlop13/.dotnet/tools:/bin:/home/devlop13/go/bin:/usr/local/go/bin:/home/devlop13/.dotnet/tools:/bin:/home/devlop13/go/bin:/usr/local/go/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/12466,unix/Devlop13:/tmp/.ICE-unix/12466
+SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/41678,unix/Devlop13:/tmp/.ICE-unix/41678
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GOPATH = /home/devlop13/go
 # environment
 CONDA_PREFIX = /home/devlop13/anaconda3
 # environment
@@ -95,7 +99,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = a40670cf40c343de88f5112dad8c12f4
+INVOCATION_ID = e848272d287e40b2b73d351958742187
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -105,7 +109,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 212924
+GIO_LAUNCHED_DESKTOP_FILE_PID = 43342
 # automatic
 %F = $(notdir $%)
 # environment
@@ -117,13 +121,13 @@ PWD = /var/www/Projects/bank-transition
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 12431
+SSH_AGENT_PID = 41634
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+GOMODCACHE = /home/devlop13/go/pkg/mod
 # environment
 HOME = /home/devlop13
 # environment
@@ -165,7 +169,7 @@ USER = devlop13
 # environment
 LC_MONETARY = uz_UZ.UTF-8
 # makefile
-.DEFAULT_GOAL := postrges
+.DEFAULT_GOAL := postgres
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # automatic
@@ -231,11 +235,11 @@ LC_ADDRESS = uz_UZ.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 212924
+VSCODE_PID = 43342
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=19/136=14%
+# Load=114/1024=11%, Rehash=0, Collisions=20/139=14%
 
 # Pattern-specific Variable Values
 
@@ -243,9 +247,9 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 2055, inode 6699619): 5 files, no impossibilities.
+# . (device 2055, inode 6699619): 12 files, no impossibilities.
 
-# 5 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -258,6 +262,8 @@ postgres:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	sudo docker run --name postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:12-alpine
 
 # Not a target:
 all:
@@ -266,33 +272,53 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-.PHONY: postgres createdb dropdb migrateup migratedown
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
+sqlc:
+#  Phony target (prerequisite of .PHONY).
+ 
+make: *** No rule to make target 'all'.  Stop.
+
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
+	sudo docker run --rm -v ${CURDIR}/db:/src -w /src kjconroy/sqlc:1.14.0 generate
+
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-28 19:09:51.504130153
+#  Last modified 2022-08-04 15:51:03.15139953
 #  File has been updated.
 #  Successfully updated.
 
+server:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+	go run main.go
+	
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	go test -v -cover ./...
+
 createdb:
 #  Phony target (prerequisite of .PHONY).
- 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 5):
 	sudo docker exec -it postgres12 createdb --username=root --owner=root bank_trans
-
-postrges:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
-	sudo docker run --name postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:12-alpine
 
 # Not a target:
 .DEFAULT:
@@ -323,22 +349,21 @@ migratedown:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 14):
 	migrate -path db/migration -database "postgres://root:secret@localhost:5432/bank_trans?sslmode=disable" -verbose down
-	
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/26=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/31=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 143 B / avg = 8 B
-# current buf: size = 8162 B / used = 143 B / count = 17 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 198 B / avg = 7 B
+# current buf: size = 8162 B / used = 198 B / count = 26 / avg = 7 B
 
-# strcache performance: lookups = 31 / hit rate = 45%
+# strcache performance: lookups = 47 / hit rate = 44%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=1/31=3%
-# Finished Make data base on Fri Jul 29 17:41:48 2022
+# Load=26/8192=0%, Rehash=0, Collisions=1/47=2%
+# Finished Make data base on Fri Aug  5 18:05:15 2022
 
  

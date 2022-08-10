@@ -4,23 +4,30 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+
+	_ "github.com/golang/mock/mockgen/model"
 )
 
-//Store provides all fnctions to executes to execute db queries and transactions
-type Store struct {
+type Store interface {
+	Querier
+	TransferTx(ctx context.Context, arg TransferTxParams) (TransferTxResult, error)
+}
+
+//SQLStore provides all fnctions to executes to execute db queries and transactions
+type SQLStore struct {
 	*Queries
 	db *sql.DB
 }
 
 //NewStore creates a new Store
-func NewStore(db *sql.DB) *Store {
-	return &Store{
+func NewStore(db *sql.DB) Store {
+	return &SQLStore{
 		db:      db,
 		Queries: New(db),
 	}
 }
 
-func (store *Store) execTx(ctx context.Context, fn func(*Queries) error) error {
+func (store *SQLStore) execTx(ctx context.Context, fn func(*Queries) error) error {
 	tx, err := store.db.BeginTx(ctx, nil)
 	if err != nil {
 		return err
@@ -39,23 +46,23 @@ func (store *Store) execTx(ctx context.Context, fn func(*Queries) error) error {
 
 //TransferTxParams contains the input params of the transfer transaction
 type TransferTxParams struct {
-	FromAccountID int64 `json:"from_account_id`
-	ToAccountID   int64 `json:"to_account_id`
+	FromAccountID int64 `json:"from_account_id"`
+	ToAccountID   int64 `json:"to_account_id"`
 	Amount        int64 `json:"amount"`
 }
 
 //TransferTxResult contains the result of the transfer transaction
 type TransferTxResult struct {
-	Transfer    Transfer `json:"transfer`
-	FromAccount Account  `json:"from_account`
-	ToAccount   Account  `json:"to_account`
+	Transfer    Transfer `json:"transfer"`
+	FromAccount Account  `json:"from_account"`
+	ToAccount   Account  `json:"to_account"`
 	FromEntry   Entry    `json:"from_entry"`
 	ToEntry     Entry    `json:"to_entry"`
 }
 
 //Transfer perform a money transfer from one account to the other
 //It creates a transfer record, add account entires, and update accounts' balance with single database transaction
-func (store *Store) TransferTx(ctx context.Context, arg TransferTxParams) (TransferTxResult, error) {
+func (store *SQLStore) TransferTx(ctx context.Context, arg TransferTxParams) (TransferTxResult, error) {
 	var result TransferTxResult
 
 	err := store.execTx(ctx, func(q *Queries) error {

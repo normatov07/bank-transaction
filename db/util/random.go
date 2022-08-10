@@ -1,6 +1,7 @@
 package util
 
 import (
+	"fmt"
 	"math/rand"
 	"strings"
 	"time"
@@ -9,7 +10,7 @@ import (
 const alphabet = "abcdefghijklmnopqrstuvwxy"
 
 func init() {
-	rand.Seed(time.Now().UnixNano() + 1)
+	rand.Seed(time.Now().UnixNano() + 6)
 
 }
 
@@ -44,4 +45,8 @@ func RandomCurrancy() string {
 	var currancy []string = []string{"USD", "RUB", "SUM"}
 	n := len(currancy)
 	return currancy[rand.Intn(n)]
+}
+
+func RandomEmail() string {
+	return fmt.Sprintf("%s@email.com", RandomString(6))
 }
