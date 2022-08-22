@@ -1,16 +1,22 @@
 package util
 
-import "github.com/spf13/viper"
+import (
+	"time"
 
-//Config struct stores all configuration of aplication
-//The values are read by viper from config file or environment
+	"github.com/spf13/viper"
+)
+
+// Config struct stores all configuration of aplication
+// The values are read by viper from config file or environment
 type Config struct {
-	DBDriver      string `mapstructure:"DB_DRIVER"`
-	DBSource      string `mapstructure:"DB_SOURCE"`
-	ServerAddress string `mapstructure:"SERVER_ADDRESS"`
+	DBDriver            string        `mapstructure:"DB_DRIVER"`
+	DBSource            string        `mapstructure:"DB_SOURCE"`
+	ServerAddress       string        `mapstructure:"SERVER_ADDRESS"`
+	TokenSymmetricKey   string        `mapstructure:"TOKEN_SYMMETRIC_KEY"`
+	AccessTokenDuration time.Duration `mapstructure:"ACCESS_TOKEN_DURATION"`
 }
 
-//LoadConfig will run all environment variables from app.env file
+// LoadConfig will run all environment variables from app.env file
 func LoadConfig(path string) (config Config, err error) {
 	viper.AddConfigPath(path)
 	viper.SetConfigName("app")

@@ -1,245 +1,273 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.2.1
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Aug  5 18:05:15 2022
+# Make data base, printed on Mon Aug 22 16:34:52 2022
 
 # Variables
 
-# 'override' directive
-GNUMAKEFLAGS := 
-# automatic
-<D = $(patsubst %/,%,$(dir $<))
-# automatic
-?F = $(notdir $?)
 # environment
-DESKTOP_SESSION = ubuntu
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+LC_NAME = uz_UZ.UTF-8
+# environment
+LC_NUMERIC = uz_UZ.UTF-8
+# environment
+VSCODE_CWD = /home/devlop13
+# environment
+WINDOWPATH = 2
+# environment
+LC_ADDRESS = uz_UZ.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+GOPATH = /home/devlop13/go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/105/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /var/www/Projects/bank-transaction
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/devlop13/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /var/www/Projects/bank-transaction
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # default
 .SHELLFLAGS := -c
 # environment
-XDG_SESSION_CLASS = user
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 3896
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-IM_CONFIG_PHASE = 1
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
-# environment
-GDMSESSION = ubuntu
-# environment
-XMODIFIERS = @im=ibus
-# makefile
-CURDIR := /var/www/Projects/bank-transition
-# makefile
-SHELL = /bin/sh
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# environment
-_ = /usr/share/code/code
-# environment
-JOURNAL_STREAM = 8:52758
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# environment
-WALLABY_PRODUCTION = true
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
-# environment
-JAVA_HOME = /usr/lib/jvm/java-11-openjdk-amd64/bin/java
-# automatic
-@F = $(notdir $@)
-# environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
-# environment
-USERNAME = devlop13
-# environment
-MAKELEVEL := 0
-# environment
-XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
-# environment
-MANAGERPID = 40070
-# environment
-LESSOPEN = | /usr/bin/lesspipe %s
-# environment
-LC_NAME = uz_UZ.UTF-8
-# environment
-VSCODE_CWD = /home/devlop13
-# environment
-GOPROXY = https://proxy.golang.org,direct
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# environment
-PATH = /home/devlop13/Downloads/google-cloud-sdk-378.0.0-linux-x86_64/google-cloud-sdk/bin:/home/devlop13/anaconda3/bin:/home/devlop13/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/devlop13/.dotnet/tools:/bin:/home/devlop13/go/bin:/usr/local/go/bin:/home/devlop13/.dotnet/tools:/bin:/home/devlop13/go/bin:/usr/local/go/bin
-# environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
-# environment
-GJS_DEBUG_OUTPUT = stderr
-# environment
-SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/41678,unix/Devlop13:/tmp/.ICE-unix/41678
-# environment
-XDG_RUNTIME_DIR = /run/user/1000
-# environment
-GOPATH = /home/devlop13/go
-# environment
-CONDA_PREFIX = /home/devlop13/anaconda3
-# environment
-XDG_MENU_PREFIX = gnome-
-# environment
-ELECTRON_RUN_AS_NODE = 1
-# environment
-INVOCATION_ID = e848272d287e40b2b73d351958742187
-# default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
-# environment
-LS_COLORS = 
-# environment
-XDG_SESSION_DESKTOP = ubuntu
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 43342
-# automatic
-%F = $(notdir $%)
-# environment
-DISPLAY = :1
-# environment
-CONDA_EXE = /home/devlop13/anaconda3/bin/conda
-# environment
-PWD = /var/www/Projects/bank-transition
-# default
-.LOADED := 
-# environment
-SSH_AGENT_PID = 41634
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
-# environment
-GTK_MODULES = gail:atk-bridge
-# environment
-GOMODCACHE = /home/devlop13/go/pkg/mod
-# environment
-HOME = /home/devlop13
-# environment
-LESSCLOSE = /usr/bin/lesspipe %s %s
-# environment
-VSCODE_CODE_CACHE_PATH = /home/devlop13/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
-# environment
-LOGNAME = devlop13
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# environment
-CONDA_PROMPT_MODIFIER = (base) 
-# automatic
-+F = $(notdir $+)
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-LC_TIME = uz_UZ.UTF-8
-# environment
-CONDA_DEFAULT_ENV = base
-# default
-MAKE = $(MAKE_COMMAND)
-# default
-MAKECMDGOALS := all
-# environment
-QT_IM_MODULE = ibus
-# environment
-SHLVL = 0
-# environment
-GNOME_SHELL_SESSION_MODE = ubuntu
-# default
-MAKE_VERSION := 4.2.1
-# environment
-USER = devlop13
-# environment
-LC_MONETARY = uz_UZ.UTF-8
-# makefile
-.DEFAULT_GOAL := postgres
-# environment
-XDG_CURRENT_DESKTOP = Unity
-# automatic
-%D = $(patsubst %/,%,$(dir $%))
-# environment
-LC_TELEPHONE = uz_UZ.UTF-8
-# environment
-CONDA_SHLVL = 1
-# default
-MAKE_COMMAND := make
-# default
-.VARIABLES := 
+SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/2530,unix/Devlop13:/tmp/.ICE-unix/2530
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-2c625834-1.69.2-main.sock
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # makefile
-MAKEFLAGS = pqrR
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
 # environment
-MFLAGS = -pqrR
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
+XMODIFIERS = @im=ibus
 # environment
-GDK_BACKEND = x11
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-LC_PAPER = uz_UZ.UTF-8
+SHLVL = 0
 # environment
-QT_ACCESSIBILITY = 1
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = iR-SxBsNy1ZBLRjq3mgruFjvfQLilus0-zseItT6e-itu5C6fRz2
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/usr/lib/dart/bin:/home/devlop13/go/bin:/usr/local/go/bin:/usr/lib/dart/bin:/home/devlop13/go/bin
 # default
 MAKEFILES := 
 # environment
-LC_NUMERIC = uz_UZ.UTF-8
+LC_MONETARY = uz_UZ.UTF-8
 # automatic
-<F = $(notdir $<)
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/devlop13/snap/code/common
+# environment
+LC_TIME = uz_UZ.UTF-8
+# environment
+SNAP = /snap/code/105
+# environment
+INVOCATION_ID = 4a3d66ae137c486eb8f99e22c96f67f7
+# environment
+SNAP_REVISION = 105
+# environment
+SNAP_REAL_HOME = /home/devlop13
+# environment
+USERNAME = devlop13
+# environment
+LC_TELEPHONE = uz_UZ.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = devlop13
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := postgres
+# environment
+SYSTEMD_EXEC_PID = 2553
+# environment
+DISPLAY = :1
+# environment
+USER = devlop13
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/105
+# environment
+SNAP_CONTEXT = iR-SxBsNy1ZBLRjq3mgruFjvfQLilus0-zseItT6e-itu5C6fRz2
+# environment
+MANAGERPID = 2137
 # environment
 LC_MEASUREMENT = uz_UZ.UTF-8
 # environment
-LC_ALL = C
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3849
 # environment
-CONDA_PYTHON_EXE = /home/devlop13/anaconda3/bin/python
+_ = /snap/code/105/usr/share/code/code
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+LC_PAPER = uz_UZ.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/devlop13/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:34395
+# environment
+GOMODCACHE = /home/devlop13/go/pkg/mod
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/devlop13
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-2c625834-1.70.2-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/105/usr/share/glib-2.0/schemas
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# default
+.RECIPEPREFIX := 
 # automatic
-^F = $(notdir $^)
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = e4503b30
 # default
 SUFFIXES := 
 # environment
-_CE_M = 
+VSCODE_CLI = 1
 # environment
-CHROME_DESKTOP = code-url-handler.desktop
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
-WINDOWPATH = 2
+SNAP_COMMON = /var/snap/code/common
 # default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+SNAP_USER_DATA = /home/devlop13/snap/code/105
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
 # environment
 LC_IDENTIFICATION = uz_UZ.UTF-8
-# default
-.RECIPEPREFIX := 
 # environment
-LC_ADDRESS = uz_UZ.UTF-8
-# environment
-LANG = C
-# environment
-VSCODE_PID = 43342
-# environment
-_CE_CONDA = 
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=114/1024=11%, Rehash=0, Collisions=20/139=14%
+# Load=127/1024=12%, Rehash=0, Collisions=5/157=3%
 
 # Pattern-specific Variable Values
 
@@ -247,84 +275,31 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 2055, inode 6699619): 12 files, no impossibilities.
+# . (device 2065, inode 13642539): 14 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
+ 
 
 # No implicit rules.
 
 # Files
 
-postgres:
+migratedown:
 #  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
-	sudo docker run --name postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:12-alpine
-
-# Not a target:
-all:
-#  Command line target.
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test server
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-sqlc:
-#  Phony target (prerequisite of .PHONY).
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 17):
-	sudo docker run --rm -v ${CURDIR}/db:/src -w /src kjconroy/sqlc:1.14.0 generate
+	migrate -path db/migration -database "postgres://root:secret@localhost:5432/bank_trans?sslmode=disable" -verbose down
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-04 15:51:03.15139953
+#  Last modified 2022-08-17 09:20:41.33154792
 #  File has been updated.
 #  Successfully updated.
-
-server:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 22):
-	go run main.go
-	
-
-test:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 20):
-	go test -v -cover ./...
-
-createdb:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
-	sudo docker exec -it postgres12 createdb --username=root --owner=root bank_trans
-
-# Not a target:
-.DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 dropdb:
 #  Phony target (prerequisite of .PHONY).
@@ -332,7 +307,23 @@ dropdb:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
-	sudo docker exec -it postgres12 dropdb bank_trans
+	sudo docker exec -it postgres14 dropdb bank_trans
+
+migratedown1:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	migrate -path db/migration -database "postgres://root:secret@localhost:5432/bank_trans?sslmode=disable" -verbose down 1
+
+server:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 29):
+	go run main.go
 
 migrateup:
 #  Phony target (prerequisite of .PHONY).
@@ -342,28 +333,86 @@ migrateup:
 #  recipe to execute (from 'Makefile', line 11):
 	migrate -path db/migration -database "postgres://root:secret@localhost:5432/bank_trans?sslmode=disable" -verbose up
 
-migratedown:
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	go test -v -cover ./...
+
+sqlc:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 24):
+	sudo docker run --rm -v ${CURDIR}/db:/src -w /src kjconroy/sqlc:1.14.0 generate
+
+gomock:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	mockgen -package mockdb -destination db/mock/store.go bank/db/sqlc Store
+
+migrateup1:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 14):
-	migrate -path db/migration -database "postgres://root:secret@localhost:5432/bank_trans?sslmode=disable" -verbose down
+	migrate -path db/migration -database "postgres://root:secret@localhost:5432/bank_trans?sslmode=disable" -verbose up 1
+
+postgres:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	sudo docker run --name postgres14 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
+
+createdb:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	sudo docker exec -it postgres14 createdb --username=root --owner=root bank_trans
+
+.PHONY: postgres createdb dropdb migrateup migratedown migrateup1 migratedown1 sqlc test server gomock
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/31=0%
+# Load=16/1024=2%, Rehash=0, Collisions=0/37=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 198 B / avg = 7 B
-# current buf: size = 8162 B / used = 198 B / count = 26 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 246 B / avg = 7 B
+# current buf: size = 8162 B / used = 246 B / count = 31 / avg = 7 B
 
-# strcache performance: lookups = 47 / hit rate = 44%
+# strcache performance: lookups = 58 / hit rate = 46%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=1/47=2%
-# Finished Make data base on Fri Aug  5 18:05:15 2022
+# Load=31/8192=0%, Rehash=0, Collisions=0/58=0%
+# Finished Make data base on Mon Aug 22 16:34:52 2022
 
  
