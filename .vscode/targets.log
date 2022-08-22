@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug 20 15:55:51 2022
+# Make data base, printed on Mon Aug 22 16:34:52 2022
 
 # Variables
 
@@ -97,7 +99,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 8696
+VSCODE_PID = 3896
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -105,7 +107,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/2651,unix/Devlop13:/tmp/.ICE-unix/2651
+SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/2530,unix/Devlop13:/tmp/.ICE-unix/2530
 # automatic
 *F = $(notdir $*)
 # environment
@@ -151,7 +153,7 @@ LC_TIME = uz_UZ.UTF-8
 # environment
 SNAP = /snap/code/105
 # environment
-INVOCATION_ID = a6b03446fa2e435ca182323f8a9bd005
+INVOCATION_ID = 4a3d66ae137c486eb8f99e22c96f67f7
 # environment
 SNAP_REVISION = 105
 # environment
@@ -185,7 +187,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 2676
+SYSTEMD_EXEC_PID = 2553
 # environment
 DISPLAY = :1
 # environment
@@ -201,11 +203,11 @@ SNAP_DATA = /var/snap/code/105
 # environment
 SNAP_CONTEXT = iR-SxBsNy1ZBLRjq3mgruFjvfQLilus0-zseItT6e-itu5C6fRz2
 # environment
-MANAGERPID = 2255
+MANAGERPID = 2137
 # environment
 LC_MEASUREMENT = uz_UZ.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 8652
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3849
 # environment
 _ = /snap/code/105/usr/share/code/code
 # environment
@@ -217,7 +219,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/devlop13/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:36105
+JOURNAL_STREAM = 8:34395
 # environment
 GOMODCACHE = /home/devlop13/go/pkg/mod
 # environment
@@ -273,11 +275,12 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2065, inode 13642539): 13 files, no impossibilities.
+# . (device 2065, inode 13642539): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
+ 
 
 # No implicit rules.
 
@@ -288,9 +291,6 @@ migratedown:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  recipe to execute (from 'Makefile', line 17):
 	migrate -path db/migration -database "postgres://root:secret@localhost:5432/bank_trans?sslmode=disable" -verbose down
 
@@ -407,12 +407,12 @@ createdb:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 30 / storage = 235 B / avg = 7 B
-# current buf: size = 8162 B / used = 235 B / count = 30 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 246 B / avg = 7 B
+# current buf: size = 8162 B / used = 246 B / count = 31 / avg = 7 B
 
-# strcache performance: lookups = 57 / hit rate = 47%
+# strcache performance: lookups = 58 / hit rate = 46%
 # hash-table stats:
-# Load=30/8192=0%, Rehash=0, Collisions=0/57=0%
-# Finished Make data base on Sat Aug 20 15:55:51 2022
+# Load=31/8192=0%, Rehash=0, Collisions=0/58=0%
+# Finished Make data base on Mon Aug 22 16:34:52 2022
 
  
