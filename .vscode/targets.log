@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 22 16:34:52 2022
+# Make data base, printed on Tue Aug 23 09:02:59 2022
 
 # Variables
 
@@ -99,7 +99,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 3896
+VSCODE_PID = 5387
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -107,7 +107,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/2530,unix/Devlop13:/tmp/.ICE-unix/2530
+SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/2702,unix/Devlop13:/tmp/.ICE-unix/2702
 # automatic
 *F = $(notdir $*)
 # environment
@@ -153,7 +153,7 @@ LC_TIME = uz_UZ.UTF-8
 # environment
 SNAP = /snap/code/105
 # environment
-INVOCATION_ID = 4a3d66ae137c486eb8f99e22c96f67f7
+INVOCATION_ID = 2492a69bd6be496ea462d4096a4156c2
 # environment
 SNAP_REVISION = 105
 # environment
@@ -187,7 +187,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 2553
+SYSTEMD_EXEC_PID = 2724
 # environment
 DISPLAY = :1
 # environment
@@ -203,11 +203,11 @@ SNAP_DATA = /var/snap/code/105
 # environment
 SNAP_CONTEXT = iR-SxBsNy1ZBLRjq3mgruFjvfQLilus0-zseItT6e-itu5C6fRz2
 # environment
-MANAGERPID = 2137
+MANAGERPID = 2306
 # environment
 LC_MEASUREMENT = uz_UZ.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3849
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5347
 # environment
 _ = /snap/code/105/usr/share/code/code
 # environment
@@ -219,7 +219,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/devlop13/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:34395
+JOURNAL_STREAM = 8:34351
 # environment
 GOMODCACHE = /home/devlop13/go/pkg/mod
 # environment
@@ -275,12 +275,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2065, inode 13642539): 14 files, no impossibilities.
+# . (device 2065, inode 13642539): 17 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
- 
 
 # No implicit rules.
 
@@ -289,6 +288,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 migratedown:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 17):
@@ -297,7 +297,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-17 09:20:41.33154792
+#  Last modified 2022-08-22 18:51:23.497449131
 #  File has been updated.
 #  Successfully updated.
 
@@ -384,7 +384,7 @@ postgres:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
-	sudo docker run --name postgres14 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
+	sudo docker run --name postgres14 --network bank-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
 
 createdb:
 #  Phony target (prerequisite of .PHONY).
@@ -407,12 +407,12 @@ createdb:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 31 / storage = 246 B / avg = 7 B
-# current buf: size = 8162 B / used = 246 B / count = 31 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 34 / storage = 286 B / avg = 8 B
+# current buf: size = 8162 B / used = 286 B / count = 34 / avg = 8 B
 
-# strcache performance: lookups = 58 / hit rate = 46%
+# strcache performance: lookups = 61 / hit rate = 44%
 # hash-table stats:
-# Load=31/8192=0%, Rehash=0, Collisions=0/58=0%
-# Finished Make data base on Mon Aug 22 16:34:52 2022
+# Load=34/8192=0%, Rehash=0, Collisions=0/61=0%
+# Finished Make data base on Tue Aug 23 09:02:59 2022
 
  
