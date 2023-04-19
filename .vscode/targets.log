@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug 23 09:02:59 2022
+# Make data base, printed on Fri Sep 30 08:30:18 2022
 
 # Variables
 
+# environment
+JAVA_HOME = /opt/jdk-17.0.4.1/
 # environment
 GDK_BACKEND = x11
 # environment
@@ -45,7 +47,7 @@ GOPATH = /home/devlop13/go
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/105/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/108/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -61,7 +63,7 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/devlop13/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /home/devlop13/.config/Code/CachedData/74b1f979648cc44d385a2286793c226e611f59e7
 # environment
 LANG = C
 # environment
@@ -99,7 +101,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 5387
+VSCODE_PID = 4829
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -107,7 +109,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/2702,unix/Devlop13:/tmp/.ICE-unix/2702
+SESSION_MANAGER = local/Devlop13:@/tmp/.ICE-unix/2980,unix/Devlop13:/tmp/.ICE-unix/2980
 # automatic
 *F = $(notdir $*)
 # environment
@@ -139,7 +141,7 @@ MAKE = $(MAKE_COMMAND)
 # environment
 SNAP_COOKIE = iR-SxBsNy1ZBLRjq3mgruFjvfQLilus0-zseItT6e-itu5C6fRz2
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/usr/lib/dart/bin:/home/devlop13/go/bin:/usr/local/go/bin:/usr/lib/dart/bin:/home/devlop13/go/bin
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/usr/lib/dart/bin:/home/devlop13/go/bin:/opt/jdk-17.0.4.1//bin:/usr/local/go/bin:/usr/lib/dart/bin:/home/devlop13/go/bin:/opt/jdk-17.0.4.1//bin
 # default
 MAKEFILES := 
 # environment
@@ -151,11 +153,11 @@ SNAP_USER_COMMON = /home/devlop13/snap/code/common
 # environment
 LC_TIME = uz_UZ.UTF-8
 # environment
-SNAP = /snap/code/105
+SNAP = /snap/code/108
 # environment
-INVOCATION_ID = 2492a69bd6be496ea462d4096a4156c2
+INVOCATION_ID = a3c6b0f531054912b3357ecb9fb6553b
 # environment
-SNAP_REVISION = 105
+SNAP_REVISION = 108
 # environment
 SNAP_REAL_HOME = /home/devlop13
 # environment
@@ -187,7 +189,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 2724
+SYSTEMD_EXEC_PID = 3000
 # environment
 DISPLAY = :1
 # environment
@@ -197,19 +199,17 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-DISABLE_WAYLAND = 1
-# environment
-SNAP_DATA = /var/snap/code/105
+SNAP_DATA = /var/snap/code/108
 # environment
 SNAP_CONTEXT = iR-SxBsNy1ZBLRjq3mgruFjvfQLilus0-zseItT6e-itu5C6fRz2
 # environment
-MANAGERPID = 2306
+MANAGERPID = 2612
 # environment
 LC_MEASUREMENT = uz_UZ.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5347
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4659
 # environment
-_ = /snap/code/105/usr/share/code/code
+_ = /snap/code/108/usr/share/code/code
 # environment
 LC_PAPER = uz_UZ.UTF-8
 # environment
@@ -219,7 +219,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/devlop13/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:34351
+JOURNAL_STREAM = 8:36617
 # environment
 GOMODCACHE = /home/devlop13/go/pkg/mod
 # environment
@@ -233,11 +233,11 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-2c625834-1.70.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-2c625834-1.71.2-main.sock
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/105/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/108/usr/share/glib-2.0/schemas
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -245,7 +245,7 @@ GOPROXY = https://proxy.golang.org,direct
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = e4503b30
+SNAP_VERSION = 74b1f979
 # default
 SUFFIXES := 
 # environment
@@ -257,7 +257,7 @@ SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-SNAP_USER_DATA = /home/devlop13/snap/code/105
+SNAP_USER_DATA = /home/devlop13/snap/code/108
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -280,6 +280,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
+ 
 
 # No implicit rules.
 
@@ -288,7 +289,6 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 migratedown:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
- 
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 17):
@@ -297,7 +297,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-22 18:51:23.497449131
+#  Last modified 2022-08-23 11:50:56.001331846
 #  File has been updated.
 #  Successfully updated.
 
@@ -413,6 +413,6 @@ createdb:
 # strcache performance: lookups = 61 / hit rate = 44%
 # hash-table stats:
 # Load=34/8192=0%, Rehash=0, Collisions=0/61=0%
-# Finished Make data base on Tue Aug 23 09:02:59 2022
+# Finished Make data base on Fri Sep 30 08:30:19 2022
 
  
